@@ -1,6 +1,6 @@
 # E-Commerce Database Management
 
-A simple E-Commerce DBMS using **Python** and **MySQL**, built around OOP classes.
+A simple E-Commerce DBMS using **Python** and **MySQL**, built around OOPs concepts.
 
 ## Project structure
 
