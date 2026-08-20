@@ -1,0 +1,37 @@
+-- Run these queries in MySQL after creating the ecommerce_db database.
+
+-- This is a sample products table values, you can add your desired values.
+
+-- USE ecommerce_db;
+
+INSERT INTO products (name, price, stock, category) VALUES
+('Wireless Mouse', 15.99, 80, 'Electronics'),
+('USB Keyboard', 22.50, 60, 'Electronics'),
+('Laptop Stand', 29.99, 40, 'Electronics'),
+('Bluetooth Headphones', 49.99, 35, 'Electronics'),
+('Power Bank 10000mAh', 19.99, 70, 'Electronics'),
+('HDMI Cable', 8.50, 120, 'Electronics'),
+('Cotton T-Shirt', 12.99, 100, 'Clothing'),
+('Denim Jeans', 34.99, 55, 'Clothing'),
+('Hoodie', 27.50, 45, 'Clothing'),
+('Running Shoes', 59.99, 30, 'Clothing'),
+('Sports Cap', 9.99, 90, 'Clothing'),
+('Wool Socks Pack', 7.49, 150, 'Clothing'),
+('Notebook A5', 3.99, 200, 'Stationery'),
+('Ballpoint Pens Pack', 4.50, 180, 'Stationery'),
+('Highlighter Set', 5.99, 110, 'Stationery'),
+('Desk Organizer', 14.99, 50, 'Stationery'),
+('Sticky Notes', 2.49, 220, 'Stationery'),
+('Coffee Mug', 6.99, 85, 'Home'),
+('Water Bottle', 11.50, 95, 'Home'),
+('Table Lamp', 24.99, 25, 'Home'),
+('Cushion Cover', 8.99, 65, 'Home'),
+('Wall Clock', 16.75, 40, 'Home'),
+('Yoga Mat', 18.99, 48, 'Sports'),
+('Dumbbell 5kg', 21.00, 32, 'Sports'),
+('Football', 17.50, 40, 'Sports'),
+('Skipping Rope', 6.25, 75, 'Sports'),
+('Novel - Mystery', 10.99, 60, 'Books'),
+('Python Programming Book', 25.00, 40, 'Books'),
+('Cookbook', 13.49, 35, 'Books'),
+('Kids Story Book', 8.25, 70, 'Books');
