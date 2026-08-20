@@ -8,3 +8,4 @@ class Database:
             password="jaidev",
             database="ecommerce_db"
         )
+        self.cursor = self.connection.cursor()
