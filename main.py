@@ -43,7 +43,7 @@ class ECommerceApp:
                 self.employee_login()
             elif choice == "0":
                 self.db.close()
-                print("Goodbye!")
+                print("Thank you for using the services !")
                 break
             else:
                 print("Invalid choice.")
