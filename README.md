@@ -1,97 +1,80 @@
-# E-Commerce Database Management System
+# E-Commerce Database Management
 
-A structured E-Commerce DBMS built with **Python** and **MySQL**, designed to demonstrate core **Object-Oriented Programming (OOP)** concepts.
+A simple E-Commerce DBMS using **Python** and **MySQL**, built around OOP classes.
 
-## Project Structure
+## Project structure
 
 ```
-├── main.py                 # CLI entry point (Facade pattern)
-├── database.py             # Singleton database connection manager
+ecommerce_project/
+│
+├── main.py
+├── database.py
+├── products.txt
 ├── requirements.txt
 │
-├── models/                 # Domain entities (OOP layer)
-│   ├── base.py             # Abstract BaseModel (inheritance, polymorphism)
-│   ├── user.py             # User entity (encapsulation via properties)
-│   ├── product.py          # Product entity (validation, stock logic)
-│   ├── cart.py             # Cart & CartItem (composition)
-│   └── order.py            # Order & OrderItem (composition)
+├── models/
+│   ├── user.py
+│   ├── product.py
+│   ├── cart.py
+│   └── order.py
 │
-└── services/               # Business logic layer
-    ├── base_service.py     # Abstract base service (inheritance)
-    ├── user_service.py     # User CRUD & authentication
-    ├── product_service.py  # Product catalog & inventory
-    ├── cart_service.py     # Shopping cart operations
-    └── order_service.py    # Order placement & lifecycle
+├── services/
+│   ├── user_service.py
+│   ├── product_service.py
+│   ├── cart_service.py
+│   └── order_service.py
+│
+└── README.md
 ```
 
-## OOP Concepts Demonstrated
+## OOP used
 
-| Concept | Implementation |
-|---------|----------------|
-| **Classes & Objects** | `User`, `Product`, `Cart`, `Order` model classes |
-| **Encapsulation** | Private attributes (`_name`, `_price`) with `@property` getters/setters |
-| **Inheritance** | `BaseModel` → all models; `BaseService` → all services |
-| **Polymorphism** | Abstract `to_dict()` / `from_dict()` methods in `BaseModel` |
-| **Composition** | `Cart` contains `CartItem` objects; `Order` contains `OrderItem` objects |
-| **Singleton** | `Database` class ensures a single connection instance |
-| **Facade** | `ECommerceApp` class wraps all services behind a simple CLI |
-
-## Prerequisites
-
-- Python 3.8+
-- MySQL Server 8.0+
+- **Classes and objects:** `User`, `Employee`, `Product`, `Cart`, `Order`
+- **Inheritance:** `User` and `Employee` inherit from `Person`
+- **Encapsulation:** data and methods live inside each class
+- **Polymorphism:** `display()` works differently for User and Employee
+- **Composition:** a `Cart` contains `CartItem` objects; an `Order` contains `OrderItem` objects
 
 ## Setup
 
-### 1. Create MySQL Database
+1. Create the database in MySQL:
 
 ```sql
 CREATE DATABASE ecommerce_db;
 ```
 
-### 2. Install Dependencies
+2. Install Python packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the Application
+3. Add sample products (optional):
+
+Open MySQL and run the queries from `products.txt`.
+
+4. Run the app:
 
 ```bash
 python main.py
 ```
 
-On first launch, enter your MySQL credentials. Tables are created automatically.
+## Logins
 
-## Features
+- **User:** register with name and email, then login with email only (no password).
+- **Employee:** login with name and password.
+  - Default employee: `admin`
+  - Default password: `admin123`
 
-- **User Management** — Register, login, update profile
-- **Product Catalog** — Add, browse, search products
-- **Shopping Cart** — Add, remove, update quantities
-- **Order Processing** — Checkout, view orders, cancel orders
-- **Inventory Control** — Stock validation and automatic deduction on purchase
-- **Admin Operations** — Add products, view all orders, update order status
+## What each role can do
 
-## Database Schema
+**User**
+- Display products
+- Add to cart
+- Checkout
+- View own orders
 
-| Table | Description |
-|-------|-------------|
-| `users` | Registered customer accounts |
-| `products` | Product catalog with pricing and stock |
-| `cart_items` | Active shopping cart entries per user |
-| `orders` | Placed order headers |
-| `order_items` | Line items within each order |
-
-## Sample Workflow
-
-1. Register a new user account
-2. Add products to the catalog (option 10)
-3. Browse products and add items to cart
-4. View cart and place an order
-5. View order history and track status
-
-## Tech Stack
-
-- **Language:** Python 3
-- **Database:** MySQL
-- **Driver:** mysql-connector-python
+**Employee**
+- Display products
+- Add products
+- Update products
