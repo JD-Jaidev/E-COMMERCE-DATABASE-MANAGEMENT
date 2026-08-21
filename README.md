@@ -40,7 +40,6 @@
 
 ```sql
 CREATE DATABASE ecommerce_db;
-USE ecommerce_db;
 ```
 
 ### 2. Install Python packages :
@@ -51,7 +50,7 @@ pip install -r requirements.txt
 
 ### 3. Add sample products (optional) :
 
-Open MySQL and run the queries from `products.txt` & add those products to the products table in `ecommerce_db` database.
+Open MySQL and run the queries from `products.txt` & add those products to the `products` table in `ecommerce_db` database.
 
 ### 4. Run the app :
 
