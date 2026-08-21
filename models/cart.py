@@ -7,7 +7,7 @@ class CartItem:
         return self.product.price * self.quantity
 
     def display(self):
-        return f"{self.product.name} x {self.quantity} = ${self.subtotal():.2f}"
+        return f"{self.product.name} x {self.quantity} = ₹{self.subtotal():.2f}"
 
 
 class Cart:
@@ -28,5 +28,5 @@ class Cart:
         if self.is_empty():
             return "Cart is empty."
         lines = [item.display() for item in self.items]
-        lines.append(f"Total: ${self.total():.2f}")
+        lines.append(f"Total: ₹{self.total():.2f}")
         return "\n".join(lines)
