@@ -1,24 +1,23 @@
-# 📊 E-Commerce Database Management System 
+# 📊 E - Commerce Database Management System 
 
 💻 A simple E-Commerce DBMS using **Python** and **MySQL**, built around OOPs concepts.
 
-## Project structure
-
+## 📁 Project structure : 
 ```
-ecommerce_project/
+🗂️ E-COMMERCE-DATABASE-MANAGEMENT/
 │
 ├── main.py
 ├── database.py
 ├── products.txt
 ├── requirements.txt
 │
-├── models/
+├── 🗂️ models/
 │   ├── user.py
 │   ├── product.py
 │   ├── cart.py
 │   └── order.py
 │
-├── services/
+├── 🗂️ services/
 │   ├── user_service.py
 │   ├── product_service.py
 │   ├── cart_service.py
@@ -27,61 +26,60 @@ ecommerce_project/
 └── README.md
 ```
 
-## OOP used
+## 📚 OOPs Concepts used : 
 
 - **Classes and objects :** `User`, `Employee`, `Product`, `Cart`, `Order`
 - **Inheritance :** `User` and `Employee` inherit from `Person`
-- **Encapsulation :** data and methods live inside each class
+- **Encapsulation :** Data and methods live inside each class
 - **Polymorphism :** `display()` works differently for User and Employee
 - **Composition :** a `Cart` contains `CartItem` objects; an `Order` contains `OrderItem` objects
 
-## Setup
+## 🔧 Setup :
 
-1. Create the database in MySQL :
+### 1. Create the database in MySQL :
 
 ```sql
 CREATE DATABASE ecommerce_db;
 ```
 
-2. Install Python packages :
+### 2. Install Python packages :
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Add sample products (optional) :
+### 3. Add sample products (optional) :
 
-```
 Open MySQL and run the queries from `products.txt`.
-```
 
-4. Run the app :
+### 4. Run the app :
 
 ```bash
 python main.py
 ```
 
-## Logins
+## 🌐 Logins :
 
-- **User:** register with name and email, then login with email only (no password).
-- **Employee:** login with name and password.
+- **User :** register with name and email, then login with email only (no password).
+- **Employee :** login with name and password.
   - Default employee : `admin`
   - Default password : `admin123`
 
-## What each role can do
+## What each role can do -
 
-**User**
+**1. User :**
 - Display products
 - Add to cart
 - Checkout
 - View own orders
 
-**Employee**
+**2. Employee :**
 - Display products
 - Add products
 - Update products
 
-## 👨‍💻 Author & Developer
+## 👨‍💻 Author & Developer :
 
 **Jaidev S**
+
 ⭐ If you like the project, consider giving the repository a star !
