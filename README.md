@@ -78,6 +78,14 @@ python main.py
 - Add products
 - Update products
 
+## Future Improvements :
+
+- Frontend 
+- User Authentication
+- Admin Dashboard
+- Product Search
+- Sorting & Filtering
+
 ## 👨‍💻 Author & Developer :
 
 **Jaidev S**
