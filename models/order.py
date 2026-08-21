@@ -8,7 +8,7 @@ class OrderItem:
         return self.price * self.quantity
 
     def display(self):
-        return f"  {self.product_name} x {self.quantity} = ${self.line_total():.2f}"
+        return f"  {self.product_name} x {self.quantity} = ₹{self.line_total():.2f}"
 
 
 class Order:
@@ -24,7 +24,7 @@ class Order:
 
     def display(self):
         lines = [
-            f"Order #{self.order_id} | Total: ${self.total_amount:.2f} | Date: {self.order_date}"
+            f"Order #{self.order_id} | Total: ₹{self.total_amount:.2f} | Date: {self.order_date}"
         ]
         for item in self.items:
             lines.append(item.display())
