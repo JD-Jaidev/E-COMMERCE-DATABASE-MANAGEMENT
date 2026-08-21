@@ -1,6 +1,6 @@
-# E-Commerce Database Management
+# 📊 E-Commerce Database Management System 
 
-A simple E-Commerce DBMS using **Python** and **MySQL**, built around OOPs concepts.
+💻 A simple E-Commerce DBMS using **Python** and **MySQL**, built around OOPs concepts.
 
 ## Project structure
 
@@ -51,7 +51,9 @@ pip install -r requirements.txt
 
 3. Add sample products (optional) :
 
+```
 Open MySQL and run the queries from `products.txt`.
+```
 
 4. Run the app :
 
@@ -78,3 +80,8 @@ python main.py
 - Display products
 - Add products
 - Update products
+
+## 👨‍💻 Author & Developer
+
+**Jaidev S**
+⭐ If you like the project, consider giving the repository a star !
