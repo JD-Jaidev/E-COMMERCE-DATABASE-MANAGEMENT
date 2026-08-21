@@ -37,7 +37,7 @@ class OrderService:
 
         self.cart_service.clear_cart(user_id)
         print(f"Checkout complete. Order ID: {order_id}")
-        print(f"Total paid: ${cart.total():.2f}")
+        print(f"Total paid: ₹{cart.total():.2f}")
 
     def show_user_orders(self, user_id):
         orders = self.db.execute(
